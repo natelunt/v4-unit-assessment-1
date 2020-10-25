@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.section1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 3px black solid;
+    height: 135px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: serif;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: ;
+    font-family: ;
+    margin: ;
+}
+
+h3 {
+    font-size: ;
+    font-family: ;
+    margin: ;
+}
+
+h4 {
+    font-size: ;
+    font-family: ;
+    margin: ;
+}

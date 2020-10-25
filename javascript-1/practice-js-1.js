@@ -1,17 +1,17 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name. */
 
-//CODE HERE 
+let myName = 'Nate';
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-//CODE HERE
+let faveNum = 57;
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
-//CODE HERE
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -19,7 +19,9 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
+function sum(num1, num2){
+  return num1 + num2
+};
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -29,7 +31,13 @@
   If 'x' does not equal true, return a false boolean.
 */
 
-//CODE HERE
+function lovesCodeChecker(x){
+  if(x === true){
+    return true
+  } else if(x === false){
+    return false
+  }
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -39,7 +47,13 @@
   If the number is even, return the string: 'the number is even'.
 */
 
-//CODE HERE
+function oddChecker(num){
+  if(num % 2 == 1){
+    return 'the number is odd'
+  } else if(num % 2 == 0){
+    return 'the number is even'
+  }
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -48,7 +62,9 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+//function iLove('name', 'love'){
+//  return (Derek) + 'loves' + (showers);
+//};
 
 
 //////////////////PROBLEM 8////////////////////
@@ -56,12 +72,12 @@
 
 const faveColors = ['red', 'green', 'black']
 
-//CODE HERE
+let colorCopy = faveColors.slice(0, 3);
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//CODE HERE
+colorCopy.push('orange'); /// should be pushing I believe
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -71,7 +87,7 @@ const faveColors = ['red', 'green', 'black']
 
 const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+let middleNums = numbers.slice(1, 4);
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -87,7 +103,12 @@ const numbers = [1, 2, 3, 4, 5]
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
-//CODE HERE
+let me = {
+  firstName: 'Nate',
+  state: 'Arizona',
+  age: 25,
+  greeter: 'Hello! my name is ' + firstName + ' and I live in ' + state,
+}
 
 //////////////////PROBLEM 12////////////////////
 /* 
