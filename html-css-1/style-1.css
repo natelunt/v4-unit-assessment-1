@@ -1,38 +1,87 @@
 body {
-    margin: 0;
-    width: 100vh;
+    margin: auto;
     height: 100vh;
-    background-color: lightgray;
+    background-color: lightgray; /* color is for editing visual, will be removed once project is complete*/
 }
 
 .section1 {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    border: 3px black solid;
+    border: 1px black solid;
+    background-color: darksalmon;
     height: 135px;
+    margin: 0px;
 }
 
 h1 {
+    margin:auto 0px 2.5% 10px;
     font-size: 40px;
     font-family: serif;
-    margin-left: auto;
 }
 
 h2 {
-    font-size: ;
-    font-family: ;
-    margin: ;
+    margin:auto 20px 2.6%;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.html {
+    display: flex;
+    border: dotted black;
+    background-color: darkseagreen; /* color is for editing visual, will be removed once project is complete*/
+    height: 315px;
+    margin: 5px;
+}
+
+.htmlAbout {
+    display: flex;
+    height: 55px;
+    width: 100vh;
+    margin: 0px;
+    background-color: blanchedalmond; /* color is for editing visual, will be removed once project is complete*/
 }
 
 h3 {
-    font-size: ;
-    font-family: ;
-    margin: ;
+    margin: 30px auto 15px 15px;
+}
+
+#htmlLogo {
+    height: 150px;
+    width: 150px;
+    margin: 56px 3px 3px 0px;
+    background-color: lightcoral; /* color is for editing visual, will be removed once project is complete*/
+}
+
+p {
+    margin: auto;
+}
+
+.css {
+    display: flex;
+    border: dotted black;
+    background-color: slateblue; /* color is for editing visual, will be removed once project is complete*/
+    height: 337.5px;
+    margin: 5px;
+}
+
+.cssAbout {
+    display: flex;
+    height: 55px;
+    width: 100vh;
+    margin: 0px;
+    background-color: rosybrown; /* color is for editing visual, will be removed once project is complete*/
 }
 
 h4 {
-    font-size: ;
-    font-family: ;
-    margin: ;
+    margin: 30px auto 15px 15px;
+}
+
+p {
+    margin: auto;
+}
+
+#cssLogo {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    background-color: darkslategray; /* color is for editing visual, will be removed once project is complete*/
 }
