@@ -33,7 +33,9 @@ const gitHubDefinition = 'GitHub is the website where our git repositories are s
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
+var init = {
+    
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
