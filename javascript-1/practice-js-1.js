@@ -62,9 +62,9 @@ function oddChecker(num){
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//function iLove('name', 'love'){
-//  return (Derek) + 'loves' + (showers);
-//};
+function iLove(name, love){
+  return name + ' loves ' + love;
+};
 
 
 //////////////////PROBLEM 8////////////////////
@@ -123,7 +123,17 @@ let me = {
   Return the answers array inside of the function.
 */
 
-// CODE HERE
+function bigOrSmall(arr) {
+  let answers = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 100){
+      answers.push('big')
+    } else {
+      answers.push('small')
+    }
+  }
+  return answers
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -135,7 +145,13 @@ let me = {
   Finally, return the 'reversed' array variable.
 */
 
-//CODE HERE
+function arrayReverser(arr){
+  let reversed = []
+  for(let i = arr.length - 1; i >= 0; i--){
+    reversed.push(arr[i])
+  }
+  return reversed
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -161,16 +177,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -179,7 +195,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Invoke the callback passing the first item in the array as an argument.
 */
 
-//CODE HERE
+function firstItem(arr, cb){
+  cb(arr[0])
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -189,7 +207,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Otherwise, invoke the callback passing in false.
 */
 
-//CODE HERE
+function isItBob(bobject, cb){
+  if(bobject.name === 'Bob'){
+    return cb(true)
+  } else {
+    return cb(false)
+  }
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -197,7 +221,12 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Use a for loop to double all numbers in the array and invoke the callback, passing in the doubled array.
 */
 
-//CODE HERE
+function giveMeDoubles(arr, cb){
+  let dblArr = []
+  for(let i = 0; i < arr.length; i++){
+    dblArr.push(arr[i] * 2)
+  } cb(dblArr)
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -207,4 +236,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Otherwise set it to false.
 */
 
-//CODE HERE
+function carFactory(make, model, year){
+  var car = {
+    make ,
+    model ,
+    year ,
+  }
+  if(year > 2018){
+    return car.isNew(true)
+  } else {
+    return car.isNew(false)
+  }
+}
