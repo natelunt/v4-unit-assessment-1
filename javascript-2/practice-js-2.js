@@ -33,8 +33,9 @@ const gitHubDefinition = 'GitHub is the website where our git repositories are s
     following the guidelines above to describe the init command.
 */
 
-var init = {
-    
+let init = {
+    description: `'git init' initializes git in your current repository. This means that git will start watching all of the files and directories in that location.`,
+    code: 'git init',
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -43,7 +44,10 @@ var init = {
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+let clone = {
+    description: `'git clone' easily makes copies of existing repositories on GitHub.`,
+    code: `git clone "url for github repo"`,
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,7 +55,10 @@ var init = {
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+let status = {
+    description: `'git status' is the command you can run to check what stage of the process you are on to push your code to github.`,
+    code: 'git status',
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -59,7 +66,10 @@ var init = {
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+let add = {
+    description: `'git add' tells git to track any changes that have been made. This is the command you can run to start the process of pushing your code to github.`,
+    code: 'git add .',
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,7 +77,10 @@ var init = {
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+let commit = {
+    description: `'git commit' will move our files from the staging area to the git repository.`,
+    code: `git commit -m "message"`,
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,7 +88,11 @@ var init = {
     following the guidelines above to describe the command to add a remote location to your git repository.
 */
 
-//CODE HERE
+let addRemote = {
+    description: `'git remote add' creates a new connection to a remote repo. After adding a remote,
+    you can use <name> as a shortcut for <url> in other commands.`,
+    code: 'git remote add origin',
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -83,4 +100,7 @@ var init = {
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+    description: `'git push' command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo.`,
+    code: 'git push origin master',
+}
